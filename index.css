@@ -1,0 +1,89 @@
+/*Stylesheet for Philip M. Haynes Portfolio Site
+ *Designed and Implemented by William J. Haynes
+ *12/05/16
+ */
+
+body{
+    background-image: url(static/Classical_Background.jpg);
+    background-size: cover;
+    width: 100vm;
+    height: 100vm;
+    min-width: 1280px;
+    min-height: 960px;
+    overflow-y: hidden;
+}
+
+#mainContainer{
+    width: 400px;
+    height: 285px;
+
+    /*padding: 40px;*/
+    /*background-color: aqua;*/
+    /*Deals with positioning element in centre*/
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    /*END OF POSITIONING ELEMENT IN CENTRE*/
+    /*background-color: aqua;*/
+    /*border: solid black 3px;*/
+}
+
+#clientName{
+    font-family: "Californian FB";
+    text-align: center;
+    padding: 15px;
+    border: solid black 3px;
+    background-color: cornsilk;
+    border-radius: 5px;
+}
+
+#clientRole{
+    padding-top: 12px;
+    font-family: "Californian FB";
+    text-align: center;
+    font-style: italic;
+    font-size: 180%;
+    text-shadow: 1px 1px white;
+}
+
+#mainNavigationControlBar{
+    padding-top: 20px;
+    margin-left: 20px;
+    width: 360px;
+    text-align: justify;
+    -ms-text-justify: distribute;
+    text-justify: distribute;
+    /*background-color: aqua;*/
+    font-family: "Californian FB";
+    font-size: 120%;
+    font-weight: bold;
+}
+.hLink{
+    text-decoration: none;
+    color: black;
+    border: solid black 3px;
+    padding: 10px;
+
+    vertical-align: top;
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    background-color: cornsilk;
+    border-radius: 5px;
+}
+
+.stretch {
+    width: 100%;
+    display: inline-block;
+    font-size: 0;
+    line-height: 0;
+}
+
+a:hover{
+    background-color: burlywood;
+    text-shadow: 0 0 10px cornsilk;
+    color: black;
+    /*border: solid cornsilk 3px;*/
+}

@@ -1,0 +1,103 @@
+/*Stylesheet for Philip M. Haynes Portfolio Site
+ *Designed and Implemented by William J. Haynes
+ *12/05/16
+ */
+
+/*~~~~~~~~~~~~~~~Overwritten CSS rules~~~~~~~~~~~~~*/
+
+#mainContainer{
+    width: 400px;
+    height: 285px;
+
+    /*padding: 40px;*/
+    /*background-color: aqua;*/
+    /*Deals with positioning element in centre*/
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    /*END OF POSITIONING ELEMENT IN CENTRE*/
+    /*background-color: aqua;*/
+    /*border: solid black 3px;*/
+}
+
+#mainNavigationControlBar{
+    padding-top: 1px;
+
+}
+
+
+/*~~~~~~~~~~~~~~About Page~~~~~~~~~~~~~~~~~*/
+
+#aboutPMH{
+    margin-top: 30px;
+    font-family: "Californian FB";
+    text-align: justify;
+    font-size: 180%;
+    text-shadow: 1px 1px white;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    border: solid black 3px;
+    background-color: cornsilk;
+    border-radius: 5px;
+
+    visibility: hidden;
+}
+
+/*~~~~~~~~~~~~~~~Portfolio Page~~~~~~~~~~~~~~~~~~*/
+
+#playerBorderBox{
+    position:absolute;
+    top: 185px;
+    border: solid black 3px;
+    background-color: black;
+    border-radius: 5px;
+}
+
+#player{
+    padding-left: 0px;
+    width: 394px;
+}
+
+#listOfVideos{
+    margin-top: 3px;
+    text-align: center;
+    margin-bottom: 3px;
+}
+
+#LOLvideos{
+    position: absolute;
+    top: 500px;
+    width: 396px;
+    height: 300px;
+
+    margin-top: 30px;
+    font-family: "Californian FB";
+    text-align: justify;
+    font-size: 180%;
+    text-shadow: 1px 1px white;
+
+    border: solid black 3px;
+    background-color: cornsilk;
+    border-radius: 5px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+#portfolioToggle{
+    position: absolute;
+    top: 440px;
+
+    padding-top: 20px;
+    margin-left: 40px;
+    width: 320px;
+    text-align: justify;
+    -ms-text-justify: distribute;
+    text-justify: distribute;
+    /*background-color: aqua;*/
+    font-family: "Californian FB";
+    font-size: 120%;
+    font-weight: bold;
+}
