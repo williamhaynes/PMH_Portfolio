@@ -9,6 +9,9 @@
     <link rel="stylesheet" type="text/css" href="aboutContactPortfolio.css" title="style" />
     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Javascript ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script type="text/javascript" src="portfolioToggleCompositionPerformance.js"></script>
+    <script type="text/javascript" src="compositionsAnimations.js"></script>
+
 </head>
 <body>
     <div id="mainContainer">
@@ -80,9 +83,8 @@
                             console.log(response.items[i].snippet.title + " published at " + response.items[i].snippet.publishedAt + " ID THAT I WANT " + response.items[i].snippet.resourceId.videoId)
                             //response.items[i].snippet.resourceId.videoId grabs the id you need for the player
                             autoText += response.items[i].snippet.title + "<br>";
-                            autoText += response.items[i].snippet.thumbnails.url + "<br>";
                         }
-                        $("#listOfVideos").html(autoText); /*Creates list of videoids*/
+                        $("#listOfLOLVideos").html(autoText); /*Creates list of videoids*/
                     });
                 })
             }
@@ -94,22 +96,23 @@
 
 
         <nav id="portfolioToggle">
-            <a class="hLink" href="#">Compositions</a>
-            <a class="hLink" href="#">Performances</a>
+            <a id="compositions" class="hLink" href="#">Compositions</a>
+            <a id="performances" class="hLink" href="#">Performances</a>
             <span class="stretch"></span>
         </nav>
-
-        <div id="LOLvideos">
-            <h3>League of Legends</h3>
-            <p id="listOfVideos"></p>
-        </div>
-        <div id="ASvideos">
-            <h3>AS Level Compositions</h3>
-            <p id="listOfVideos2"></p>
-        </div>
-        <div id="Avideos">
-            <h3>A Level Compositions</h3>
-            <p id="listOfVideos2"></p>
+        <div id="compositionItemContainer">
+            <div id="LOLvideos" class="compositionItem">
+                <h3 id ="titleLOL" class="compositionItemTitle">+ League of Legends</h3>
+                <p id="listOfLOLVideos"></p>
+            </div>
+            <div id="ASvideos" class="compositionItem">
+                <h3 id ="titleASLevel" class="compositionItemTitle">+ AS Level Compositions</h3>
+                <p id="listOfASVideos"></p>
+            </div>
+            <div id="Avideos" class="compositionItem">
+                <h3 id ="titleALevel" class="compositionItemTitle">+ A Level Compositions</h3>
+                <p id="listOfAVideos"></p>
+            </div>
         </div>
     </div>
 </body>

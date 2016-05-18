@@ -61,17 +61,22 @@
     width: 394px;
 }
 
-#listOfVideos{
-    margin-top: 3px;
-    text-align: center;
-    margin-bottom: 3px;
-}
 
-#LOLvideos{
+
+/*~~~~~~composition item bounding box~~~~~~~~*/
+#compositionItemContainer {
     position: absolute;
     top: 500px;
-    width: 396px;
     height: 300px;
+    width: 396px;
+
+}
+
+
+/*~~~~~~~LOL Controls~~~~~~~~~*/
+#LOLvideos{
+    width: 396px;
+    height: 70px;
 
     margin-top: 30px;
     font-family: "Californian FB";
@@ -83,9 +88,76 @@
     background-color: cornsilk;
     border-radius: 5px;
     overflow: scroll;
+    overflow-y: hidden;
     overflow-x: hidden;
 }
 
+#listOfLOLVideos{
+    position: relative;
+    text-align: center;
+    margin-bottom: 3px;
+}
+
+
+#titleLOL{
+
+    margin-top: 15px;
+    text-align: center;
+    width: 360px;
+    background-color: cornsilk;
+}
+
+/*~~~~~~~AS Controls~~~~~~~~~*/
+#ASvideos{
+    width: 396px;
+    height: 70px;
+
+    margin-top: 5px;
+    font-family: "Californian FB";
+    text-align: justify;
+    font-size: 180%;
+    text-shadow: 1px 1px white;
+
+    border: solid black 3px;
+    background-color: cornsilk;
+    border-radius: 5px;
+    overflow: scroll;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+#titleASLevel{
+    margin-top: 15px;
+    text-align: center;
+}
+
+/*~~~~~~~A Controls~~~~~~~~~*/
+
+#Avideos{
+    width: 396px;
+    height: 70px;
+
+    margin-top: 5px;
+    font-family: "Californian FB";
+    text-align: justify;
+    font-size: 180%;
+    text-shadow: 1px 1px white;
+
+    border: solid black 3px;
+    background-color: cornsilk;
+    border-radius: 5px;
+    overflow: scroll;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+#titleALevel{
+    margin-top: 15px;
+    text-align: center;
+}
+
+
+/*~~~~~~~Composition/Performance toggle~~~~~~*/
 #portfolioToggle{
     position: absolute;
     top: 440px;
