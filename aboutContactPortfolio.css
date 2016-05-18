@@ -101,3 +101,33 @@
     font-size: 120%;
     font-weight: bold;
 }
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Contact Page~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+#emailIcon{
+    position: absolute;
+    top: 200px;
+    left: 20px;
+}
+
+#clientEmailAddress{
+    position: absolute;
+    top: 205px;
+    right: 0px;
+    width: 270px;
+
+}
+
+#phoneIcon{
+    position: absolute;
+    top: 280px;
+    left: 20px;
+}
+
+#clientPhoneNumber{
+    position: absolute;
+    top: 295px;
+    right: 0px;
+    width: 270px;
+}
