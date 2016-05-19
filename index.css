@@ -9,7 +9,7 @@ body{
     width: 100vm;
     height: 100vm;
     min-width: 480px;
-    min-height: 960px;
+    min-height: 480px;
     overflow-y: hidden;
     overflow-x: hidden;
 }
