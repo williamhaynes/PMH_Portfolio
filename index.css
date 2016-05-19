@@ -9,7 +9,7 @@ body{
     width: 100vm;
     height: 100vm;
     min-width: 480px;
-    min-height: 480px;
+    min-height: 960px;
     overflow-y: hidden;
     overflow-x: hidden;
 }
@@ -93,7 +93,19 @@ a:hover{
 /*~~~~~~~~~~~~~~~~~~Mobile Device rules~~~~~~~~~~~~~~~~*/
 
 @media only screen and (max-device-width: 480px){
-    body{
-        background-image: none;
+    #mainContainer{
+        width: 400px;
+        height: 285px;
+        /*padding: 40px;*/
+        /*background-color: aqua;*/
+        /*Deals with positioning element in centre*/
+        position: absolute;
+        top: 380px;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        /*END OF POSITIONING ELEMENT IN CENTRE*/
+        /*background-color: aqua;*/
+        /*border: solid black 3px;*/
     }
 }
