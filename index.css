@@ -8,7 +8,7 @@ body{
     background-size: cover;
     width: 100vm;
     height: 100vm;
-    min-width: 1280px;
+    min-width: 480px;
     min-height: 960px;
     overflow-y: hidden;
     overflow-x: hidden;
