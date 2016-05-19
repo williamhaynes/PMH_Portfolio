@@ -17,7 +17,6 @@ body{
 #mainContainer{
     width: 400px;
     height: 285px;
-
     /*padding: 40px;*/
     /*background-color: aqua;*/
     /*Deals with positioning element in centre*/
@@ -87,4 +86,22 @@ a:hover{
     text-shadow: 0 0 10px cornsilk;
     color: black;
     /*border: solid cornsilk 3px;*/
+}
+
+
+
+/*~~~~~~~~~~~~~~~~~~Mobile Device rules~~~~~~~~~~~~~~~~*/
+
+@media only screen and (max-device-width: 480px){
+    body{
+        background-image: url(static/Classical_Background.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100vm;
+        height: 100vm;
+        min-width: 480px;
+        min-height: 1000px;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
 }
