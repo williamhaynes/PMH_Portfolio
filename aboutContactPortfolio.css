@@ -32,7 +32,7 @@
 
 #aboutPMH{
     margin-top: 30px;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Playfair Display';
     text-align: justify;
     font-size: 140%;
     text-shadow: 1px 1px white;
@@ -79,7 +79,7 @@
     height: 70px;
 
     margin-top: 30px;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Playfair Display';
     text-align: justify;
     font-size: 180%;
     text-shadow: 1px 1px white;
@@ -112,7 +112,7 @@
     height: 70px;
 
     margin-top: 5px;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Playfair Display';
     text-align: justify;
     font-size: 180%;
     text-shadow: 1px 1px white;
@@ -137,7 +137,7 @@
     height: 70px;
 
     margin-top: 5px;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Playfair Display';
     text-align: justify;
     font-size: 180%;
     text-shadow: 1px 1px white;
@@ -168,7 +168,7 @@
     -ms-text-justify: distribute;
     text-justify: distribute;
     /*background-color: aqua;*/
-    font-family: 'Playfair Display', serif;
+    font-family: 'Playfair Display';
     font-size: 120%;
     font-weight: bold;
 }
@@ -201,4 +201,24 @@
     top: 295px;
     right: 0px;
     width: 270px;
+}
+
+/*~~~~~~~~~~???????????????????~~~~~~~~~~~~~~~~~~~~~~~*/
+
+#clientName{
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    padding: 15px;
+    border: solid black 3px;
+    background-color: cornsilk;
+    border-radius: 5px;
+}
+
+#clientRole{
+    padding-top: 12px;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    font-style: italic;
+    font-size: 180%;
+    text-shadow: 1px 1px white;
 }
