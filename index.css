@@ -94,14 +94,6 @@ a:hover{
 
 @media only screen and (max-device-width: 480px){
     body{
-        background-image: url(static/Classical_Background.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        width: 100vm;
-        height: 100vm;
-        min-width: 480px;
-        min-height: 1000px;
-        overflow-y: hidden;
-        overflow-x: hidden;
+        background-image: none;
     }
 }
