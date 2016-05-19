@@ -32,7 +32,7 @@ body{
 }
 
 #clientName{
-    font-family: "Californian FB";
+    font-family: 'Playfair Display', serif;
     text-align: center;
     padding: 15px;
     border: solid black 3px;
@@ -42,7 +42,7 @@ body{
 
 #clientRole{
     padding-top: 12px;
-    font-family: "Californian FB";
+    font-family: 'Playfair Display', serif;
     text-align: center;
     font-style: italic;
     font-size: 180%;
@@ -57,7 +57,7 @@ body{
     -ms-text-justify: distribute;
     text-justify: distribute;
     /*background-color: aqua;*/
-    font-family: "Californian FB";
+    font-family: 'Playfair Display', serif;
     font-size: 120%;
     font-weight: bold;
 }

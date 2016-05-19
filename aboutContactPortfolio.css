@@ -32,9 +32,9 @@
 
 #aboutPMH{
     margin-top: 30px;
-    font-family: "Californian FB";
+    font-family: 'Playfair Display', serif;
     text-align: justify;
-    font-size: 180%;
+    font-size: 140%;
     text-shadow: 1px 1px white;
     padding-left: 10px;
     padding-right: 10px;
@@ -79,7 +79,7 @@
     height: 70px;
 
     margin-top: 30px;
-    font-family: "Californian FB";
+    font-family: 'Playfair Display', serif;
     text-align: justify;
     font-size: 180%;
     text-shadow: 1px 1px white;
@@ -113,7 +113,7 @@
     height: 70px;
 
     margin-top: 5px;
-    font-family: "Californian FB";
+    font-family: 'Playfair Display', serif;
     text-align: justify;
     font-size: 180%;
     text-shadow: 1px 1px white;
@@ -138,7 +138,7 @@
     height: 70px;
 
     margin-top: 5px;
-    font-family: "Californian FB";
+    font-family: 'Playfair Display', serif;
     text-align: justify;
     font-size: 180%;
     text-shadow: 1px 1px white;
@@ -169,7 +169,7 @@
     -ms-text-justify: distribute;
     text-justify: distribute;
     /*background-color: aqua;*/
-    font-family: "Californian FB";
+    font-family: 'Playfair Display', serif;
     font-size: 120%;
     font-weight: bold;
 }
