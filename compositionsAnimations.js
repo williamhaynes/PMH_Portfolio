@@ -6,7 +6,7 @@ $(function() {
     $(".compositionItemTitle").click(function () {
         var whatClicked = $(this).parent().attr('id');
         /*alert(whatClicked);*/
-        $("body").css({
+        $("body").css({ /*This css update updates some scroll issues due to collapsible expandable boxes*/
             "overflow-y": "scroll",
             "overflow-x": "hidden"
         });
@@ -85,6 +85,7 @@ function expandCollapseSelection(data){
 
 
     /*~~~~~~~~~ modify selected div~~~~~~~~*/
+    /*makes selected box expand to show contents - LOL, AS, A currently*/
     if(whatHeight=="70px"){
         $("#"+data).css({
             "height": "250px",
@@ -95,6 +96,7 @@ function expandCollapseSelection(data){
 
     );}
 
+    /*makes selected box collapse to hide contents - LOL, AS, A currently*/
     else{
         $("#"+data).scrollTop(0);
         $("#"+data).css({
