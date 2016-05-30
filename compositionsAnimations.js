@@ -43,8 +43,11 @@ function expandCollapseSelection(data){
     }
     else if(data=="ASvideos"){
         /*alert("LOLVideos" + " AVideos");*/
+        /*Autoscroll to top when div closed*/
         $('#LOLvideos').scrollTop(0);
         $('#Avideos').scrollTop(0);
+
+        /*Update Css rules to close potentially open video sections*/
         $("#LOLvideos").css({
                 "height": "70px",
                 "color" : "black",
@@ -93,6 +96,7 @@ function expandCollapseSelection(data){
     );}
 
     else{
+        $("#"+data).scrollTop(0);
         $("#"+data).css({
                 "height": "70px",
                 "color" : "black",
