@@ -1,10 +1,11 @@
 /**
  * Created by William on 13/05/2016.
  * This js file works to animate the look of the webpages when moving from the home page on to
- * the about, portfolio or contact page. 
+ * the about, portfolio or contact page.
  */
 
 $(function() {
+
     $(".hLink").click(function () {
         moveBox();
         var hyperlinkDirector = ($(this).attr('id'));
