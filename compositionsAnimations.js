@@ -24,6 +24,8 @@ function expandCollapseSelection(data){
     //ensure other two divs are collapsed
     if(data=="LOLvideos"){
         /*alert("ASvideos" + " Avideos");*/
+        $('#ASvideos').scrollTop(0);
+        $('#Avideos').scrollTop(0);
         $("#ASvideos").css({
                 "height": "70px",
                 "color" : "black",
@@ -41,6 +43,8 @@ function expandCollapseSelection(data){
     }
     else if(data=="ASvideos"){
         /*alert("LOLVideos" + " AVideos");*/
+        $('#LOLvideos').scrollTop(0);
+        $('#Avideos').scrollTop(0);
         $("#LOLvideos").css({
                 "height": "70px",
                 "color" : "black",
@@ -58,6 +62,8 @@ function expandCollapseSelection(data){
     }
     else if(data=="Avideos"){
         /*alert("LOLVideos" + " ASVideos");*/
+        $('#LOLvideos').scrollTop(0);
+        $('#ASvideos').scrollTop(0);
         $("#LOLvideos").css({
                 "height": "70px",
                 "color" : "black",
