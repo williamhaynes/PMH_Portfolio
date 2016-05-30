@@ -94,8 +94,7 @@ a:hover{
 
 @media only screen and (max-device-width: 780px){
     body{
-        background-image: url(static/Treble_Clef_Barnstar.png);
-        background-size: 80px, 80px;
+        background-size: 2880px, 1920px;
         width: 100vm;
         height: 100vm;
         min-width: 480px;
