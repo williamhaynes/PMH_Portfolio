@@ -222,3 +222,14 @@
     font-size: 180%;
     text-shadow: 1px 1px white;
 }
+
+li{
+    padding: 0px;
+    margin: 0px;
+
+}
+
+li:hover{
+    cursor: pointer;
+    cursor: hand;
+}

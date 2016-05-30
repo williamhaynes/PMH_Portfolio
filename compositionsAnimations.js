@@ -2,8 +2,9 @@
  * Created by William on 18/05/2016.
  */
 $(function() {
-    $(".compositionItem").click(function () {
-        var whatClicked = ($(this).attr('id'));
+
+    $(".compositionItemTitle").click(function () {
+        var whatClicked = $(this).parent().attr('id');
         /*alert(whatClicked);*/
         $("body").css({
             "overflow-y": "scroll",
@@ -11,6 +12,7 @@ $(function() {
         });
         expandCollapseSelection(whatClicked);
     });
+
 });
 
 function expandCollapseSelection(data){
@@ -77,7 +79,7 @@ function expandCollapseSelection(data){
     if(whatHeight=="70px"){
         $("#"+data).css({
             "height": "250px",
-            "color" : "red",
+            "color" : "black",
             "font-size" : "20px",
             "overflow-y" : "scroll"
         }

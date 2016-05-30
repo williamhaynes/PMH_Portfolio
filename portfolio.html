@@ -13,6 +13,8 @@
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script type="text/javascript" src="portfolioToggleCompositionPerformance.js"></script>
     <script type="text/javascript" src="compositionsAnimations.js"></script>
+    <script type="text/javascript" src="videoChanger.js"></script>
+
 
 </head>
 <body>
@@ -71,8 +73,11 @@
         function stopVideo() {
             player.stopVideo();
         }
+
+
     </script>
         <script>
+            //Loads up LOL Playlist into <LOLvideos>
             function onGoogleLoad() {
                 gapi.client.setApiKey('AIzaSyD4Bpv9fV5o0yFf2rsVyHmkt2jtlHvIVq0');
                 gapi.client.load('youtube', 'v3', function () {
@@ -86,11 +91,28 @@
                         for (var i = 0; i < response.items.length; i++) {
                             console.log(response.items[i].snippet.title + " published at " + response.items[i].snippet.publishedAt + " ID THAT I WANT " + response.items[i].snippet.resourceId.videoId)
                             //response.items[i].snippet.resourceId.videoId grabs the id you need for the player
-                            autoText +="<p id='"+response.items[i].snippet.resourceId.videoId+ "'>" + response.items[i].snippet.title +"</p>"+ "<br>";
+                            autoText +="<li class='videoChoice' id='"+response.items[i].snippet.resourceId.videoId+ "'>" + response.items[i].snippet.title +"</li>";
                         }
                         $("#listOfLOLVideos").html(autoText); /*Creates list of videoids*/
                     });
                 })
+                gapi.client.load('youtube', 'v3', function () {
+                    var request = gapi.client.youtube.playlistItems.list({
+                        part: 'snippet',
+                        playlistId: 'PLNYZFQEbC8_WIU6ZZQu012YHgtvgchFAv',
+                        maxResults: 50
+                    });
+                    request.execute(function (response) {
+                        var autoText = "";
+                        for (var i = 0; i < response.items.length; i++) {
+                            console.log(response.items[i].snippet.title + " published at " + response.items[i].snippet.publishedAt + " ID THAT I WANT " + response.items[i].snippet.resourceId.videoId)
+                            //response.items[i].snippet.resourceId.videoId grabs the id you need for the player
+                            autoText +="<li class='videoChoice' id='" +response.items[i].snippet.resourceId.videoId +"'>" + response.items[i].snippet.title +"</li>";
+                        }
+                        $("#listOfASVideos").html(autoText); /*Creates list of videoids*/
+                    });
+                })
+
             }
         </script>
         <script src="https://apis.google.com/js/client.js?onload=onGoogleLoad"></script>
@@ -107,15 +129,15 @@
         <div id="compositionItemContainer">
             <div id="LOLvideos" class="compositionItem">
                 <h3 id ="titleLOL" class="compositionItemTitle">+ League of Legends</h3>
-                <p id="listOfLOLVideos"></p>
+                <ul id="listOfLOLVideos"></ul>
             </div>
             <div id="ASvideos" class="compositionItem">
                 <h3 id ="titleASLevel" class="compositionItemTitle">+ AS Level Compositions</h3>
-                <p id="listOfASVideos"></p>
+                <ul id="listOfASVideos"></ul>
             </div>
             <div id="Avideos" class="compositionItem">
                 <h3 id ="titleALevel" class="compositionItemTitle">+ A Level Compositions</h3>
-                <p id="listOfAVideos"></p>
+                <ul id="listOfAVideos"></ul>
             </div>
         </div>
     </div>
