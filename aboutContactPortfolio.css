@@ -32,7 +32,7 @@
 /*~~~~~~~~~~~~~~About Page~~~~~~~~~~~~~~~~~*/
 
 #aboutPMH{
-    margin-top: 30px;
+    margin-top: 0px;
     font-family: 'Playfair Display';
     text-align: justify;
     font-size: 140%;
@@ -45,13 +45,14 @@
     border-radius: 5px;
 
     visibility: hidden;
+    height: 562px;
 }
 
 /*~~~~~~~~~~~~~~~Portfolio Page~~~~~~~~~~~~~~~~~~*/
 
 #playerBorderBox{
     position:absolute;
-    top: 185px;
+    top: 200px;
     border: solid black 3px;
     background-color: black;
     border-radius: 5px;
@@ -66,12 +67,14 @@
 
 /*~~~~~~composition item bounding box~~~~~~~~*/
 #compositionItemContainer {
-    position: absolute;
-    top: 500px;
+    position: relative;
+    top: 300px;
     height: 300px;
     width: 396px;
 
 }
+
+
 
 
 /*~~~~~~~LOL Controls~~~~~~~~~*/
@@ -81,7 +84,7 @@
 
     margin-top: 30px;
     font-family: 'Playfair Display';
-    text-align: justify;
+    text-align: center;
     font-size: 180%;
     text-shadow: 1px 1px white;
 
@@ -104,7 +107,7 @@
     margin-top: 10px;
     text-align: center;
     width: 360px;
-    background-color: cornsilk;
+    padding-left: 15px;
 }
 
 /*~~~~~~~AS Controls~~~~~~~~~*/
@@ -114,7 +117,7 @@
 
     margin-top: 5px;
     font-family: 'Playfair Display';
-    text-align: justify;
+    text-align: center;
     font-size: 180%;
     text-shadow: 1px 1px white;
 
@@ -129,6 +132,8 @@
 #titleASLevel{
     margin-top: 10px;
     text-align: center;
+    width: 360px;
+    padding-left: 15px;
 }
 
 /*~~~~~~~A Controls~~~~~~~~~*/
@@ -139,7 +144,7 @@
 
     margin-top: 5px;
     font-family: 'Playfair Display';
-    text-align: justify;
+    text-align: center;
     font-size: 180%;
     text-shadow: 1px 1px white;
 
@@ -154,13 +159,15 @@
 #titleALevel{
     margin-top: 10px;
     text-align: center;
+    width: 360px;
+    padding-left: 15px;
 }
 
 
 /*~~~~~~~Composition/Performance toggle~~~~~~*/
 #portfolioToggle{
     position: absolute;
-    top: 440px;
+    top: 445px;
 
     padding-top: 20px;
     margin-left: 40px;
@@ -177,15 +184,34 @@
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Contact Page~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
+#contactPMH{
+    margin-top: 0px;
+    font-family: 'Playfair Display';
+    text-align: justify;
+
+    text-shadow: 1px 1px white;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    border: solid black 3px;
+    background-color: cornsilk;
+    border-radius: 5px;
+
+
+    height: 412px;
+}
+
+
+
 #emailIcon{
     position: absolute;
-    top: 200px;
-    left: 20px;
+    top: 350px;
+    left: 150px;
 }
 
 #clientEmailAddress{
     position: absolute;
-    top: 205px;
+    top: 255px;
     right: 0px;
     width: 270px;
 
@@ -193,15 +219,25 @@
 
 #phoneIcon{
     position: absolute;
-    top: 280px;
+    top: 320px;
     left: 20px;
 }
 
 #clientPhoneNumber{
     position: absolute;
-    top: 295px;
+    top: 345px;
     right: 0px;
     width: 270px;
+}
+
+#writtenAddress{
+    text-align: center;
+    font-size: 120%;
+}
+
+#CopyrightNotice{
+    text-align: center;
+    padding-top: 3px;
 }
 
 /*~~~~~~~~~~???????????????????~~~~~~~~~~~~~~~~~~~~~~~*/
@@ -224,14 +260,28 @@
     text-shadow: 1px 1px white;
 }
 
-li{
+/*Selector for individual videos*/
+
+ul{
+    list-style-type: none;
     padding: 0px;
     margin: 0px;
+}
 
+li{
+    padding: 5px;
+    margin: 0px;
 }
 
 li:hover{
     cursor: pointer;
+    cursor: hand;
+    background-color: burlywood;
+}
+
+/*Control for + - on portfolio page style*/
+h3:hover{
+    cursor: cell;
     cursor: hand;
 }
 
